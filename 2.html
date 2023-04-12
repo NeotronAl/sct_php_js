@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x ,y, k;
+
+    if (k === 2 || k === 3) {
+        y = Math.pow(x, k) + x + 1;
+    } else if (k >= 4 && k <= 6) {
+        y = 1 / Math.abs(x + 1);
+    } else {
+        y = Math.sqrt(Math.abs(x + k) + Math.sqrt(Math.abs(x - k)));
+    }
+
+</script>
+</body>
+</html>
