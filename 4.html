@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var m = [10, 20, 30, 50, 235, 3000];
+    var n;
+    for (var i = 0; i < m.length; i++) {
+        n = m[i];
+        while (n >= 10) {
+            n = Math.trunc(n / 10);
+        }
+        if (n === 1 || n === 2 || n === 5) {
+            console.log(m[i]);
+        }
+    }
+</script>
+</body>
+</html>
