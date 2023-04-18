@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = Number(prompt('Введите первое число: '));
+    var y = Number(prompt('Введите второе число: '));
+    var op = prompt('Введите действие: ');
+    var result = 0;
+
+    switch (op) {
+        case '+':
+            result = x + y;
+            break;
+        case '-':
+            result = x - y;
+            break;
+        case '*':
+            result = x * y;
+            break;
+        case '/':
+            result = x / y;
+            break;
+    }
+    alert('Результат = ' + result)
+</script>
+</body>
+</html>
