@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function strLenght(str) {
+        strArray = str.split(' ');
+        result = strArray[0];
+        for (var i = 1; i < strArray.length; i++) {
+            if (strArray[i].length > result.length) {
+                result = strArray[i];
+            }
+        }
+        return result;
+    }
+</script>
+</body>
+</html>

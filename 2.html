@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getAge(date) {
+        var now = new Date();
+        var parseDate = Date.parse(date.slice(6, 10) + '-' + date.slice(3, 5) + '-' + date.slice(0, 2));
+        var result = (now - parseDate) / 1000 / 60 / 60 / 24 / 365;
+        return result.toFixed(1);
+    }
+</script>
+</body>
+</html>
