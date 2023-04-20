@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input oninput="onInput(this)" type="text">
+<script>
+
+    function onInput(elem) {
+        console.log('Значение из текстового поля: ' + elem.value);
+        if (elem.value === 'картинка') {
+            alert('картинка');
+        }
+    }
+</script>
+</body>
+</html>
