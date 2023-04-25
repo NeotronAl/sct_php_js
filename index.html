@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<form id="main-form" method="post">
+    <div class="input-box">
+        <label for="name">ФИО </label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="input-box">
+        <label for="phone">Номер телефона </label>
+        <input type="text" name="phone" id="phone">
+    </div>
+    <div class="input-box">
+        <label for="mail">Email </label>
+        <input type="text" name="mail" id="mail">
+    </div>
+    <div class="input-box">
+        <label for="theme">Тема вопроса</label>
+        <input type="text" name="theme" id="theme">
+    </div>
+    <div class="input-box">
+        <label for="main-text">Текст</label>
+        <textarea name="main-text" id="main-text"></textarea>
+    </div>
+    <div class="input-box" id="error-msg"></div>
+    <div class="input-box">
+        <input name="sumbit" id="sumbit" type="submit" value="Отправить">
+    </div>
+</form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
