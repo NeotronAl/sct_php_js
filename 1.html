@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="table">
+
+</div>
+<script>
+    var str = '';
+
+    for (var i = 0; i < 4; i++) {
+        str += '<tr>';
+
+        for (var j = 0; j < 4; j++) {
+            str += '<td>' + Math.floor(Math.random() * 100) + '</td>';
+        }
+        str += '</tr>';
+    }
+
+    $('#table').html('<table>' + str + '</table>');
+</script>
+</body>
+</html>
