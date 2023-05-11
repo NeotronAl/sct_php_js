@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+
+<p data-index="100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nam.</p>
+<p data-index="15">Lorem ipsum dolor sit amet.</p>
+<p data-index="70">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p data-index="12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea mollitia nisi provident?</p>
+
+<script>
+    $('*[data-index]').each(function () {
+        var data = $(this).attr('data-index');
+        if (data > 28) {
+            $(this).attr('data-index', 'Новое значение');
+        }
+    })
+
+</script>
+</body>
+</html>
