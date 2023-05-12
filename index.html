@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<p class="par_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nam.</p>
+<p class="par_2">Lorem ipsum dolor sit amet.</p>
+<p class="par_1">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+<p class="par_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea mollitia nisi provident?</p>
+
+<script>
+    $('.par_1').css('font-size', '24px').css('color', 'blue').css('font-weight', 'bold');
+    $('.par_2').css('font-size', '18px').css('font-weight', 'bold').css('color', function () {
+        return $('.par_1').css('color')
+    });
+</script>
+</body>
+</html>
